@@ -7,10 +7,11 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { Events, Notes } from '../../types/events';
 import { EventListComponent } from "./event-list/event-list.component";
 import { DatePickerModule } from 'primeng/datepicker';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @Component({
   selector: 'app-home',
-  imports: [PanelModule, SkeletonModule, ButtonModule, TranslatePipe, EventListComponent],
+  imports: [PanelModule, SkeletonModule, ButtonModule, TranslatePipe, EventListComponent,CalendarComponent], // calendar
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
